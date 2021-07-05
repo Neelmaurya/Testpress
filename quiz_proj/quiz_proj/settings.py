@@ -26,7 +26,7 @@ SECRET_KEY = '_op!x%^1gyhwbigcfat)7(*dvll*-2bcze^jf63ru==+ww2wnk'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1',]
+ALLOWED_HOSTS = ['127.0.0.1','simplequizapp.herokuapp.com']
 
 
 # Application definition
