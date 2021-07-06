@@ -1,1 +1,1 @@
-web: gunicorn IQ1.wsgi --log-file -
+web: gunicorn quiz_proj.wsgi --log-file -
