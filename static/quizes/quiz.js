@@ -98,7 +98,7 @@ const sendData = () => {
 
     $.ajax({
         type: 'POST',
-        url: `${url}save/`,
+        url: `${url}`,
         data: data,
         success: function(response){
             const results = response.results
@@ -144,6 +144,4 @@ const sendData = () => {
 
 quizForm.addEventListener('submit', e=>{
     e.preventDefault()
-
-    sendData()
 })
