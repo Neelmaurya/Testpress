@@ -141,3 +141,9 @@ const sendData = () => {
         }
     })
 }
+
+quizForm.addEventListener('submit', e=>{
+    e.preventDefault()
+
+    sendData()
+})
