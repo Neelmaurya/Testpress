@@ -26,7 +26,7 @@ def quiz_data_view(request, pk):
         'time': quiz.time,
     })
 
-def save_quiz_view(request):
+def save_quiz_view(request, pk):
     if request.is_ajax():
         questions = []
         data = request.POST
@@ -41,7 +41,7 @@ def save_quiz_view(request):
         print(questions)
 
         user = request.user
-        quiz = Quiz.objects.get()
+        quiz = Quiz.objects.get(pk=pk)
 
         score = 0
         multiplier = 100 / quiz.number_of_questions
