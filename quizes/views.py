@@ -29,7 +29,7 @@ def quiz_data_view(request, pk):
 def save_quiz_view(request, pk):
     if request.is_ajax():
         questions = []
-        data = request
+        data = request.POST
         data_ = dict(data.lists())
 
         data_.pop('csrfmiddlewaretoken')
